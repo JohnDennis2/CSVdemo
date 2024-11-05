@@ -49,4 +49,4 @@ function processCSV(inputFileName, outputFileName, emailDomain) {
 
 // Example Usage:
 // Process an existing CSV file "existing_students.csv" and generate a new CSV "updated_students.csv"
-processCSV("existing_students.csv", "updated_students.csv", "Houston.isd");
+processCSV("houston_student_roster_test.csv", "updated_students.csv", "Houston.isd");
