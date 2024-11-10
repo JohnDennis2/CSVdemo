@@ -20,8 +20,8 @@ function processCSV(inputFileName, outputFileName, emailDomain) {
             // If email is missing, generate it
             const studentEmail = email || generateEmail(first_name, last_name, emailDomain);
 
-            // If birthday is missing, you could either leave it empty or generate a default value
-            const studentBirthday = birthday || "Not Provided"; // Or you could generate a random date if preferred
+            
+            const studentBirthday = birthday || "Not Provided"; 
 
             // Create new student object with all necessary fields
             const student = {
@@ -47,6 +47,6 @@ function processCSV(inputFileName, outputFileName, emailDomain) {
         });
 }
 
-// Example Usage:
-// Process an existing CSV file "existing_students.csv" and generate a new CSV "updated_students.csv"
+
+// Processes an existing CSV file and generates a new CSV "updated_students.csv"
 processCSV("houston_student_roster_test.csv", "updated_students.csv", "Houston.isd");
